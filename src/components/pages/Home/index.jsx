@@ -1,6 +1,6 @@
 import React from 'react'
 import Explore from './Explore';
-import Header from './Header';
+//import Header from './Header';
 import Section from './Section';
 import { HomeComponent } from './styled';
 
@@ -8,7 +8,7 @@ const Home = () => (
 
     <>
         <HomeComponent>
-            <Header />
+            {/*<Header />*/}
             <Section />
             <Explore />
         </HomeComponent>

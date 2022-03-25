@@ -6,7 +6,7 @@ export const SectionComponent = styled.section`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: calc(3rem * 2);
 `;
 
 export const Text = styled.p`
