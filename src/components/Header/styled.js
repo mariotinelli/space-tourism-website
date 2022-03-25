@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import logo from '../../assets/shared/logo.svg'
-import menu from '../../assets/shared/icon-hamburger.svg'
+import logo from '../../../public/assets/shared/logo.svg'
+import menu from '../../../public/assets/shared/icon-hamburger.svg'
 
 export const HeaderComponent = styled.header`
     width: 23.4375rem;

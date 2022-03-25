@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRouter} from 'react-router-dom'
-import closeIcon from '../../../assets/shared/icon-close.svg'
+import closeIcon from '../../../../public/assets/shared/icon-close.svg'
 
 export const MenuComponent = styled.div`
     width: 15.875rem;
