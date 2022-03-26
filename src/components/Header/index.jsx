@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import Menu from './Menu';
-import { Close, CloseIcon } from './Menu/styled';
-import { HeaderComponent, Icon, Logo, MenuToggle } from './styled'
+import { HeaderComponent, Icon, Logo, MenuToggle,MenuComponent, Links, Number, Link, Close, CloseIcon } from './styled'
 
 const Header = () => {
 
@@ -20,11 +18,29 @@ const Header = () => {
                     <Icon />
                 </MenuToggle>
                 {showMenuToggle && (
-                    <Menu> 
-                        <Close 
-                            onClick={handleClick}>   <CloseIcon /> 
-                        </Close> 
-                    </Menu>
+                    <MenuComponent>  
+                        <Close onClick={handleClick}>   
+                            <CloseIcon /> 
+                        </Close>              
+                        <Links>                
+                            <Link to="/" onClick={handleClick}> 
+                                <Number>00</Number> 
+                                HOME 
+                            </Link>
+                            <Link to="/destinations/moon" onClick={handleClick}> 
+                                <Number>01</Number> 
+                                DESTINATION 
+                            </Link>
+                            <Link to="/crew" onClick={handleClick}> 
+                                <Number>02</Number> 
+                                CREW 
+                            </Link>
+                            <Link to="/technology" onClick={handleClick}> 
+                                <Number>03</Number> 
+                                TECHNOLOGY 
+                            </Link>
+                        </Links>            
+                    </MenuComponent>  
                 )}
             </HeaderComponent>
         </>

@@ -9,7 +9,7 @@ const links = [
     'titan'
 ]
 
-const LayoutDestinations = ({background, src, name, description, distance, time}) => (
+const Destinations = ({background, src, name, description, distance, time}) => (
 
     <>        
         <Container background={background}>  
@@ -20,7 +20,7 @@ const LayoutDestinations = ({background, src, name, description, distance, time}
             <Image src={src}/>
             <Links>
                 {links.map((link) => (
-                    <Link to={`/destinations/${link}`}> {link} </Link>
+                    <Link key={link} to={`/destinations/${link}`}> {link} </Link>
                 ))}
             </Links>
             <Name> {name} </Name>
@@ -36,4 +36,4 @@ const LayoutDestinations = ({background, src, name, description, distance, time}
     
 )
 
-export default LayoutDestinations;
+export default Destinations;

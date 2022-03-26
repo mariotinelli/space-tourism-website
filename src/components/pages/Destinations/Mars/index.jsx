@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutDestinations from '../Layout';
+import Destinations from '../Layout';
 import background from "../../../../../public/assets/destination/background-destination-mobile.jpg"
 import image from "../../../../../public/assets/destination/image-mars.png"
 
@@ -11,7 +11,7 @@ const time = "9 MONTHS";
 const Mars = () => (
 
     <>        
-        <LayoutDestinations 
+        <Destinations 
             background={background}
             src={image}
             name={name}

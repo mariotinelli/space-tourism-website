@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link as LinkRouter} from 'react-router-dom'
+import { NavLink as LinkRouter} from 'react-router-dom'
 
 export const Container = styled.div`
     width: 100vw;
@@ -7,6 +7,7 @@ export const Container = styled.div`
     padding-top: calc(1.5rem * 2);
     padding-inline: 1.5rem;
     background: url(${props => props.background}) no-repeat;
+    background-size: 100vw 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +41,7 @@ export const Image = styled.img`
 `;
 
 export const Links = styled.div`
-    height: 1.75rem;
+    //height: 1.75rem;
     display: flex;
     gap: 1.625rem;
 `;
@@ -53,6 +54,12 @@ export const Link = styled(LinkRouter)`
     letter-spacing: 0.1477rem;
     text-transform: uppercase;
     text-decoration: none;
+    padding-bottom: 8px;
+
+    &:hover {
+        color: var(--white-color);
+        border-bottom: 3px solid var(--white-color);
+    }
 `;
 
 export const Name = styled.p`
