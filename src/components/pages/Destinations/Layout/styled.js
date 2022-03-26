@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { NavLink as LinkRouter} from 'react-router-dom'
+import { keyframes } from 'styled-components';
 
 export const Container = styled.div`
     width: 100vw;
@@ -27,6 +27,7 @@ export const Index = styled.p`
     font-size: var(--font-2);
     font-weight: 700;
     letter-spacing: 2.7px;
+
 `;
 
 export const Title = styled(Index)`
@@ -34,33 +35,39 @@ export const Title = styled(Index)`
     font-weight: 400;
 `;
 
+
+const rotate = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+`;
+
 export const Image = styled.img`
     width: 10.625rem;
     height: 10.625rem;
     margin-bottom: 1.625rem;
+    animation: ${rotate} 180s linear infinite;    
 `;
 
 export const Links = styled.div`
-    //height: 1.75rem;
     display: flex;
     gap: 1.625rem;
 `;
 
-export const Link = styled(LinkRouter)`
+/*export const Link = styled.a`
     font-family: "Barlow Condensed", sans-serif;
     font-size: var(--font-3);
     font-weight: 400;
-    color: var(--text-color);
     letter-spacing: 0.1477rem;
     text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 8px;
-
-    &:hover {
-        color: var(--white-color);
-        border-bottom: 3px solid var(--white-color);
-    }
-`;
+    color: ${props => props.isActive ? "#FFF" : "#D0D6F9"};
+    border-bottom: ${props => props.isActive ? "3px solid #FFF" : ""};
+`;*/
 
 export const Name = styled.p`
     margin-top: 1.25rem;
