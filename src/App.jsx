@@ -12,6 +12,7 @@ import Mars from "./components/pages/Destinations/Mars";
 import Europa from "./components/pages/Destinations/Europa";
 import Titan from "./components/pages/Destinations/Titan";
 import Crew from "./components/pages/Crew";
+import Technology from "./components/pages/Technology";
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
             <Route path="/destinations/europa" element={<Europa />} />
             <Route path="/destinations/titan" element={<Titan />} />
             <Route path="/crew" element={<Crew />} />
+            <Route path="/technology" element={<Technology />} />
         </Routes>
       </BrowserRouter>
     </>

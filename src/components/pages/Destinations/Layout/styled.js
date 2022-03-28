@@ -92,6 +92,7 @@ export const Description = styled.p`
     text-align: center;
     line-height: 1.5625rem;
     margin-bottom: ${props => props.marginBottom};
+    padding-inline: ${props => props.paddingInline};
 `;
 
 export const Information = styled.div`
