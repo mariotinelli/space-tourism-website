@@ -1,9 +1,11 @@
 import styled from 'styled-components'
-import { keyframes } from 'styled-components';
+import {
+    keyframes
+} from 'styled-components';
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100%;
+    height: ${props => props.height};
     padding-top: calc(1.5rem * 2);
     padding-inline: 1.5rem;
     background: url(${props => props.background}) no-repeat;
@@ -22,7 +24,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Index = styled.p`
-    color: var(--title-destinations);
+    color: var(--title-destinations);    
     font-family: 'Barlow Condensed', sans-serif;
     font-size: var(--font-2);
     font-weight: 700;
@@ -46,8 +48,8 @@ const rotate = keyframes`
 `;
 
 export const Image = styled.img`
-    width: 10.625rem;
-    height: 10.625rem;
+    width: 170px;
+    height: 170px;
     margin-bottom: 1.625rem;
     animation: ${rotate} 180s linear infinite;    
 `;
@@ -85,6 +87,7 @@ export const Description = styled.p`
     font-weight: 400;
     text-align: center;
     line-height: 1.5625rem;
+    margin-bottom: ${props => props.marginBottom};
 `;
 
 export const Information = styled.div`

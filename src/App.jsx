@@ -11,6 +11,7 @@ import Moon from "./components/pages/Destinations/Moon";
 import Mars from "./components/pages/Destinations/Mars";
 import Europa from "./components/pages/Destinations/Europa";
 import Titan from "./components/pages/Destinations/Titan";
+import Crew from "./components/pages/Crew";
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path="/destinations/mars" element={<Mars />} />
             <Route path="/destinations/europa" element={<Europa />} />
             <Route path="/destinations/titan" element={<Titan />} />
+            <Route path="/crew" element={<Crew />} />
         </Routes>
       </BrowserRouter>
     </>

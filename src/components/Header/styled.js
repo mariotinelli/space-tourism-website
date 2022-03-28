@@ -33,6 +33,7 @@ export const MenuComponent = styled.div`
     right: 0;
     background: var(--background-menu);
     backdrop-filter: blur(1.5rem);
+    z-index: 100;
 `;
 
 export const Close = styled.button`

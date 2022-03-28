@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
         --font-4: 3.5rem;  // 56px
         --font-5: 0.9375rem;  // 15px
         --font-6: 1.75rem;  // 28px
+        --font-7: 1.5rem;  // 24px
     }
 `;
  
