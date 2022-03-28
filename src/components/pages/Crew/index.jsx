@@ -19,7 +19,8 @@ const Crew = () => (
   <>
     <Container height="44.375rem" background={background}>
       <Swiper
-        pagination={true} 
+        spaceBetween={30}
+        pagination={{clickable: true,}} 
         modules={[Pagination]} 
         className="mySwiper"
       >

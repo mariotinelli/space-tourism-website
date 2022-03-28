@@ -19,6 +19,11 @@ export const Swiper = styled(SwiperReact)`
     & .swiper-pagination-bullet {
         width: 0.625rem;
         height: 0.625rem;
+    }
+
+    & .swiper-pagination-bullet:hover {
+        width: 0.625rem;
+        height: 0.625rem;
         background: var(--white-color);
     }
 

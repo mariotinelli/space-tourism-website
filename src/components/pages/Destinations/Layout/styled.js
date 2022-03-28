@@ -57,6 +57,10 @@ export const Image = styled.img`
 export const Links = styled.div`
     display: flex;
     gap: 1.625rem;
+
+    & .navlink:hover {
+        border-bottom: 3px solid #FFF5;
+    }
 `;
 
 /*export const Link = styled.a`

@@ -23,6 +23,7 @@ const Destinations = ({background, src, name, description, distance, time}) => {
                 <Links>
                     {links.map((link) => (
                         <NavLink
+                            className="navlink"
                             style={({ isActive }) => {
                                 return {
                                     fontFamily: "Barlow Condensed",
@@ -33,7 +34,7 @@ const Destinations = ({background, src, name, description, distance, time}) => {
                                     textDecoration: "none",
                                     paddingBottom: "0.5rem",
                                     color: isActive ? "#FFF" : "#D0D6F9",
-                                    borderBottom: isActive ? "3px solid #FFF" : ""
+                                    borderBottom: isActive ? "3px solid #FFF" : "",
                                 }
                             }}
                             key={link} 

@@ -12,8 +12,19 @@ export const Button = styled.button`
     height: 9.375rem;
     background-color: var(--white-color);
     border: none;
-    border-radius: 6.25rem;
+    border-radius: 50%;
+    transition: 0.5s;
+    position: relative;
+
+    &:hover {
+        box-sizing: content-box;
+        border-radius: 50%;
+       -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 5.25rem solid rgba(255, 255, 255, .1);
+    }
 `;
+
 
 export const Text = styled.p`
     color: var(--dark-color);
