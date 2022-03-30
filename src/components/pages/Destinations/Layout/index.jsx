@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-import {Container, Description, Image, Links, Name, Index, Title, TitleContainer, Text, Number, Information} from './styled'
+import {Container, Description, Image, Links, Name, Index, Title, TitleContainer, Text, Number, Information, Data} from './styled'
 
 const links = [
     'moon',
@@ -46,10 +46,14 @@ const Destinations = ({background, src, name, description, distance, time}) => {
                 <Name> {name} </Name>
                 <Description> {description} </Description>
                 <Information>
-                    <Text> AVG. DISTANCE </Text>
-                    <Number> {distance} </Number>
-                    <Text> EST. TRAVEL TIME </Text>
-                    <Number> {time} </Number>
+                    <Data>
+                        <Text> AVG. DISTANCE </Text>
+                        <Number> {distance} </Number>
+                    </Data>
+                    <Data>
+                        <Text> EST. TRAVEL TIME </Text>
+                        <Number> {time} </Number>
+                    </Data>
                 </Information>
             </Container>        
         </>   

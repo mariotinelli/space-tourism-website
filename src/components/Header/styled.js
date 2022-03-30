@@ -14,18 +14,33 @@ export const HeaderComponent = styled.header`
     padding: 1.5rem; 
 `;
 
-export const Logo = styled.img.attrs({src: logo})``;
+export const Logo = styled.img.attrs({src: logo})`
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @media only screen and (min-width : 768px) {
+        width: 3rem;
+        height: 3rem;
+    }
+
+`;
 
 export const MenuToggle = styled.button`
     border: none;
     background-color: transparent;
     right: 1.5rem;
+
+    @media only screen and (min-width : 768px) {
+        display: none;
+    }
 `;
 
 export const Icon = styled.img.attrs({src: menu})``;
 
 
 export const MenuComponent = styled.div`
+    display: ${props => props.display === false ? "none" : "block"};
     width: 15.875rem;
     height: 100vh;
     position: absolute;
@@ -34,6 +49,14 @@ export const MenuComponent = styled.div`
     background: var(--background-menu);
     backdrop-filter: blur(1.5rem);
     z-index: 100;
+
+    @media only screen and (min-width : 768px) {
+        width: 28.125rem;
+        height: 6rem;
+        display: flex;
+        backdrop-filter: none;
+        background-color: var(--background-menu);
+    }
 `;
 
 export const Close = styled.button`
@@ -41,6 +64,10 @@ export const Close = styled.button`
     margin-left: 13.0281rem;
     border: none;
     background-color: transparent;
+
+    @media only screen and (min-width : 768px) {
+        display: none;
+    }
 `;
 
 export const CloseIcon = styled.img.attrs({src: closeIcon})``;
@@ -51,11 +78,49 @@ export const Links = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    & .navlink {
+        display: flex;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: var(--font-2);
+        font-weight: 400;
+        color: var(--white-color);
+        text-decoration: none;
+        letter-spacing: 0.1688rem;
+    }
+
+    @media only screen and (min-width : 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.4375rem;
+        margin-inline: auto;
+        gap: 2.3125rem;        
+
+        & .navlink {
+            font-size: var(--font-3);
+            letter-spacing: 0.1477rem;
+            padding-bottom: 2.25rem;
+        }
+
+        & .navlink:hover {
+            border-bottom: 3px solid #FFF5;
+        }
+
+        & .navlink.active {
+            padding-bottom: "2.25rem";
+            border-bottom: 3px solid var(--white-color);
+        }
+    }
 `;
 
 export const Number = styled.p`
     font-weight: 700;
     margin-right: 0.875rem;
+
+    @media only screen and (min-width : 768px) {
+        display: none;
+    }
 `;
 
 export const Link = styled(LinkRouter)`
@@ -65,5 +130,11 @@ export const Link = styled(LinkRouter)`
     font-weight: 400;
     color: var(--white-color);
     text-decoration: none;
-    letter-spacing: 2.7px;
+    letter-spacing: 0.1688rem;
+
+    @media only screen and (min-width : 768px) {
+        font-size: var(--font-3);
+        letter-spacing: 0.1477rem;
+        padding-bottom: 39px;
+    }
 `;

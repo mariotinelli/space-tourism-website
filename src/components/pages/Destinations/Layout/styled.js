@@ -13,6 +13,14 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (min-width : 768px) {
+        padding-top: 6rem;
+        background: url("/public/assets/destination/background-destination-tablet.jpg") no-repeat;
+        background-size: 100vw 100%;
+        height: 100vh;
+        padding-inline: 2.4375rem;
+    }
 `;
 
 export const TitleContainer = styled.div`
@@ -21,6 +29,12 @@ export const TitleContainer = styled.div`
     gap: 1.125rem;
     margin-top: calc(1.5rem * 2);
     margin-bottom: 2rem;
+
+    @media only screen and (min-width : 768px) {
+        margin-top: 2.5rem;
+        margin-bottom: 3.75rem;
+        align-self: flex-start;
+    }
 `;
 
 export const Index = styled.p`
@@ -28,8 +42,12 @@ export const Index = styled.p`
     font-family: 'Barlow Condensed', sans-serif;
     font-size: var(--font-2);
     font-weight: 700;
-    letter-spacing: 2.7px;
+    letter-spacing: 0.1688rem;
 
+    @media only screen and (min-width : 768px) {
+        font-size: var(--font-1);
+        letter-spacing: 0.2109rem;
+    }
 `;
 
 export const Title = styled(Index)`
@@ -48,10 +66,16 @@ const rotate = keyframes`
 `;
 
 export const Image = styled.img`
-    width: 170px;
-    height: 170px;
+    width: 10.625rem;
+    height: 10.625rem;
     margin-bottom: 1.625rem;
-    animation: ${rotate} 180s linear infinite;    
+    animation: ${rotate} 180s linear infinite;   
+    
+    @media only screen and (min-width : 768px) {
+        width: 18.75rem;
+        height: 18.75rem;
+        margin-bottom: 3.3125rem;
+    }
 `;
 
 export const Links = styled.div`
@@ -61,19 +85,17 @@ export const Links = styled.div`
     & .navlink:hover {
         border-bottom: 3px solid #FFF5;
     }
+
+    @media only screen and (min-width : 768px) {
+        gap: 2.1875rem;
+
+        & .navlink {
+           font-size: var(--font-2);
+           letter-spacing: 0.1688rem;           
+        }
+    }
 `;
 
-/*export const Link = styled.a`
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: var(--font-3);
-    font-weight: 400;
-    letter-spacing: 0.1477rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 8px;
-    color: ${props => props.isActive ? "#FFF" : "#D0D6F9"};
-    border-bottom: ${props => props.isActive ? "3px solid #FFF" : ""};
-`;*/
 
 export const Name = styled.p`
     margin-top: 1.25rem;
@@ -81,7 +103,13 @@ export const Name = styled.p`
     font-size: var(--font-4);
     font-weight: 400;
     color: var(--white-color);
-    line-height: 64px;
+    line-height: 4rem;
+
+    @media only screen and (min-width : 768px) {
+        margin-top: 2.9375rem;
+        font-size: var(--font-9);
+        line-height: 5.75rem;
+    }
 `;
 
 export const Description = styled.p`
@@ -93,6 +121,13 @@ export const Description = styled.p`
     line-height: 1.5625rem;
     margin-bottom: ${props => props.marginBottom};
     padding-inline: ${props => props.paddingInline};
+
+    @media only screen and (min-width : 768px) {
+        margin-bottom: 0.5rem;
+        max-width: 35.8125rem;
+        line-height: 28px;
+        font-size: var(--font-2);
+    }
 `;
 
 export const Information = styled.div`
@@ -103,6 +138,24 @@ export const Information = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
+    @media only screen and (min-width : 768px) {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3.0625rem;
+        padding-top: 1.8125rem;
+        width: 35.8125rem;
+        gap: 0.6875rem;
+    }
+`;
+
+export const Data = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13.9375rem;
 `;
 
 export const Text = styled.p`
