@@ -12,12 +12,17 @@ export const HeaderComponent = styled.header`
     position: absolute;
     top: 0;
     padding: 1.5rem; 
+
+    @media only screen and (min-width : 768px) {
+        padding-left: 2.4375rem; 
+    }
 `;
 
 export const Logo = styled.img.attrs({src: logo})`
 
     width: 2.5rem;
     height: 2.5rem;
+    z-index: 100;
 
     @media only screen and (min-width : 768px) {
         width: 3rem;
@@ -30,6 +35,7 @@ export const MenuToggle = styled.button`
     border: none;
     background-color: transparent;
     right: 1.5rem;
+    z-index: 100;
 
     @media only screen and (min-width : 768px) {
         display: none;

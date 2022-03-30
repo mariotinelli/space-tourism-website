@@ -1,14 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 
-import {Container, Description, Image, Links, Name, Index, Title, TitleContainer, Text, Number, Information, Data} from './styled'
+import {Container, Description, Image, Name, Index, Title, TitleContainer, Text, Number, Information, Data} from './styled'
 
-const links = [
-    'moon',
-    'mars',
-    'europa',
-    'titan'
-]
 
 const Destinations = ({background, src, name, description, distance, time}) => {
 
@@ -20,29 +13,6 @@ const Destinations = ({background, src, name, description, distance, time}) => {
                     <Title> PICK YOUR DESTINATION </Title>
                 </TitleContainer>
                 <Image src={src}/>
-                <Links>
-                    {links.map((link) => (
-                        <NavLink
-                            className="navlink"
-                            style={({ isActive }) => {
-                                return {
-                                    fontFamily: "Barlow Condensed",
-                                    fontSize: "0.875rem",
-                                    fontWeight: 400,
-                                    letterSpacing: "0.1477rem",
-                                    textTransform: "uppercase",
-                                    textDecoration: "none",
-                                    paddingBottom: "0.5rem",
-                                    color: isActive ? "#FFF" : "#D0D6F9",
-                                    borderBottom: isActive ? "3px solid #FFF" : "",
-                                }
-                            }}
-                            key={link} 
-                            to={`/destinations/${link}`}> 
-                                {link} 
-                        </NavLink>
-                    ))}
-                </Links>
                 <Name> {name} </Name>
                 <Description> {description} </Description>
                 <Information>

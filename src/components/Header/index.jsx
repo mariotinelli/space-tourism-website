@@ -15,7 +15,7 @@ const Header = () => {
         },
         {
             key: "01",
-            to: "/destinations/moon",
+            to: "/destinations",
             name: "DESTINATION"
         },
         {

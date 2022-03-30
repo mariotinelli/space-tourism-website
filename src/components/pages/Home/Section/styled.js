@@ -6,7 +6,7 @@ export const SectionComponent = styled.section`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: calc(3rem * 2);
+    margin-top: 3rem;
     max-width: 28.125rem;
     margin-inline: auto;
 

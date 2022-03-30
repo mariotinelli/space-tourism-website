@@ -15,6 +15,7 @@ const Victor = () => (
             occupation={occupation}
             name={name}
             description={description}
+            maxWidth="37rem"
         />
     </>
 );

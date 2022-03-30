@@ -13,6 +13,7 @@ import Europa from "./components/pages/Destinations/Europa";
 import Titan from "./components/pages/Destinations/Titan";
 import Crew from "./components/pages/Crew";
 import Technology from "./components/pages/Technology";
+import Destinations from "./components/pages/Destinations";
 
 function App() {
   
@@ -24,10 +25,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/destinations/moon" element={<Moon />} />
-            <Route path="/destinations/mars" element={<Mars />} />
-            <Route path="/destinations/europa" element={<Europa />} />
-            <Route path="/destinations/titan" element={<Titan />} />
+            <Route path="/destinations" element={<Destinations />} />
             <Route path="/crew" element={<Crew />} />
             <Route path="/technology" element={<Technology />} />
         </Routes>

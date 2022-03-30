@@ -1,25 +1,22 @@
 import React from "react";
-import {
-  Description,
-  Index,
-  Title,
-  TitleContainer,
-} from "../../Destinations/Layout/styled";
-import { Image, ImageContainer, Name, Occupation } from "./styled";
+
+import { Image, ImageContainer, Name, Occupation, TitleContainer, Index, Title, Description, Container } from "./styled";
 
 
-const CrewLayout = ({ src, occupation, name, description }) => (
+const CrewLayout = ({ src, occupation, name, description, maxWidth }) => (
     <>
-        <TitleContainer>
-            <Index>02</Index>
-            <Title>MEET YOUR CREW</Title>
-        </TitleContainer>
-        <ImageContainer>
-            <Image src={src} />
-        </ImageContainer>
-        <Occupation> {occupation} </Occupation>
-        <Name> {name} </Name>
-        <Description marginBottom="6.5rem">{description}</Description>
+        <Container>
+            <TitleContainer>
+                <Index>02</Index>
+                <Title>MEET YOUR CREW</Title>
+            </TitleContainer>
+            <ImageContainer>
+                <Image src={src} />
+            </ImageContainer>
+            <Occupation> {occupation} </Occupation>
+            <Name> {name} </Name>
+            <Description maxWidth={maxWidth}>{description}</Description>
+        </Container>
     </>
 );
 

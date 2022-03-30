@@ -7,8 +7,12 @@ export const Swiper = styled(SwiperReact)`
     height: 100%;
 
     & .swiper-pagination {
-        top: 53%;
+        top: 24.625rem;
         height: 0.625rem;
+
+        @media only screen and (min-width : 768px) {
+            top: 27.625rem;
+        }
     }
 
     & .swiper-pagination-bullet-active {

@@ -5,8 +5,7 @@ import {
 
 export const Container = styled.div`
     width: 100vw;
-    height: ${props => props.height};
-    padding-top: calc(1.5rem * 2);
+    padding-top: 4rem;
     padding-inline: 1.5rem;
     background: url(${props => props.background}) no-repeat;
     background-size: 100vw 100%;
@@ -27,7 +26,7 @@ export const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 1.125rem;
-    margin-top: calc(1.5rem * 2);
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 
     @media only screen and (min-width : 768px) {
@@ -68,37 +67,17 @@ const rotate = keyframes`
 export const Image = styled.img`
     width: 10.625rem;
     height: 10.625rem;
-    margin-bottom: 1.625rem;
+    margin-bottom: 4.625rem;
     animation: ${rotate} 180s linear infinite;   
     
     @media only screen and (min-width : 768px) {
         width: 18.75rem;
         height: 18.75rem;
-        margin-bottom: 3.3125rem;
+        margin-bottom: 7.4375rem;
     }
 `;
-
-export const Links = styled.div`
-    display: flex;
-    gap: 1.625rem;
-
-    & .navlink:hover {
-        border-bottom: 3px solid #FFF5;
-    }
-
-    @media only screen and (min-width : 768px) {
-        gap: 2.1875rem;
-
-        & .navlink {
-           font-size: var(--font-2);
-           letter-spacing: 0.1688rem;           
-        }
-    }
-`;
-
 
 export const Name = styled.p`
-    margin-top: 1.25rem;
     font-family: 'Bellefair', sans-serif;
     font-size: var(--font-4);
     font-weight: 400;
@@ -106,7 +85,6 @@ export const Name = styled.p`
     line-height: 4rem;
 
     @media only screen and (min-width : 768px) {
-        margin-top: 2.9375rem;
         font-size: var(--font-9);
         line-height: 5.75rem;
     }
@@ -123,7 +101,6 @@ export const Description = styled.p`
     padding-inline: ${props => props.paddingInline};
 
     @media only screen and (min-width : 768px) {
-        margin-bottom: 0.5rem;
         max-width: 35.8125rem;
         line-height: 28px;
         font-size: var(--font-2);
@@ -131,9 +108,9 @@ export const Description = styled.p`
 `;
 
 export const Information = styled.div`
-    margin-top: 2rem;
+    margin-top: 32px;
     padding-top: 2rem;
-    padding-bottom: 3.625rem;
+    padding-bottom: 1.625rem;
     border-top: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
@@ -156,6 +133,11 @@ export const Data = styled.div`
     justify-content: center;
     align-items: center;
     width: 13.9375rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width : 768px) {
+        margin-bottom: 62px;
+    }
 `;
 
 export const Text = styled.p`
@@ -172,5 +154,4 @@ export const Number = styled.p`
     font-weight: 400;
     font-size: var(--font-6);
     color: var(--white-color);
-    margin-bottom: 2rem;
 `;

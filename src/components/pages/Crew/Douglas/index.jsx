@@ -15,6 +15,7 @@ const Douglas = () => (
             occupation={occupation}
             name={name}
             description={description}
+            maxWidth="28.625rem"
         />
     </>
 );

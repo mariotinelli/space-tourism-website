@@ -15,6 +15,7 @@ const Mark = () => (
             occupation={occupation}
             name={name}
             description={description}
+            maxWidth="32.5rem"
         />
     </>
 );

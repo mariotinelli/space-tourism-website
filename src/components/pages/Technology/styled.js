@@ -7,14 +7,19 @@ export const Swiper = styled(SwiperReact)`
     height: 100%;
 
     & .swiper-pagination {
-        top: 46%;
+        top: 21.4375rem;
         height: 2.5rem;
+
+        @media only screen and (min-width : 768px) {
+            top: 36.625rem;
+            height: 3.75rem;
+        }
     }
         
     & .swiper-pagination-bullet {
         font-family: 'Bellefair';
-        width: 2.5rem;
         height: 2.5rem;
+        width: 2.5rem;
         background: transparent;
         color: var(--white-color);
         font-weight: 400;
@@ -22,6 +27,13 @@ export const Swiper = styled(SwiperReact)`
         padding-top: 0.6875rem;
         border: 1px solid var(--title-destinations);
         opacity: 1;
+
+        @media only screen and (min-width : 768px) {
+            height: 3.75rem;
+            width: 3.75rem;
+            font-size: var(--font-7);
+            padding-top: 1rem;
+        }
     }
 
     & .swiper-pagination-bullet-active {

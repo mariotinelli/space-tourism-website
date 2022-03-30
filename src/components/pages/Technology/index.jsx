@@ -10,15 +10,13 @@ import { Pagination } from "swiper";
 
 import { Swiper } from './styled';
 
-import { Container } from './Layout/styled';
-
 import Launch from './Launch';
 import Spaceport from './Spaceport';
 import SpaceCapsule from './SpaceCapsule';
 
 const Technology = () => (
   <>
-    <Container background={background}>
+    
       <Swiper
         spaceBetween={30}
         pagination={{
@@ -35,7 +33,6 @@ const Technology = () => (
         <SwiperSlide> <SpaceCapsule /> </SwiperSlide>
         
       </Swiper>
-    </Container>
   </>
 );
 

@@ -15,6 +15,7 @@ const Anousheh = () => (
             occupation={occupation}
             name={name}
             description={description}
+            maxWidth="33.5rem"
         />
     </>
 );
