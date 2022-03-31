@@ -17,7 +17,7 @@ export const Container = styled.div`
         padding-top: 6rem;
         background: url("/public/assets/destination/background-destination-tablet.jpg") no-repeat;
         background-size: 100vw 100%;
-        height: 100vh;
+        height: 100%;
         padding-inline: 2.4375rem;
     }
 `;

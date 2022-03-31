@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const HomeComponent = styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding-top: 4rem;
     padding-inline: 1.5rem;
     background: url(${props => props.background}) no-repeat;
@@ -11,7 +11,8 @@ export const HomeComponent = styled.div`
     @media only screen and (min-width : 768px) {
         background: url("/public/assets/home/background-home-tablet.jpg") no-repeat;
         background-size: 100vw 100%;
+        padding: 0;
         padding-top: 1.5rem;
-        overflow: hidden;
+        padding-left: 1.5rem;
     }
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding-top: 4rem;
     padding-inline: 1.5rem;
     background: url("/public/assets/crew/background-crew-mobile.jpg") no-repeat;
@@ -15,7 +15,7 @@ export const Container = styled.div`
         padding-top: 6rem;
         background: url("/public/assets/crew/background-crew-tablet.jpg") no-repeat;
         background-size: 100vw 100%;
-        height: 100vh;
+        height: 100%;
         padding-inline: 2.4375rem;
     }
 `;
