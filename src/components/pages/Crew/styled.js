@@ -13,26 +13,31 @@ export const Swiper = styled(SwiperReact)`
         @media only screen and (min-width : 768px) {
             top: 27.625rem;
         }
+
+        @media only screen and (min-width : 1440px) {
+            width: 8.25rem;
+            top: 49.4375rem;
+            left: 10.4375rem;
+        }
     }
 
     & .swiper-pagination-bullet-active {
-        width: 0.625rem;
-        height: 0.625rem;
         background: var(--white-color);
     }
+
     & .swiper-pagination-bullet {
         width: 0.625rem;
         height: 0.625rem;
+
+        @media only screen and (min-width : 1440px) {
+            width: 0.9375rem;
+            height: 0.9375rem;
+            background: var(--white-color);
+        }
     }
 
     & .swiper-pagination-bullet:hover {
-        width: 0.625rem;
-        height: 0.625rem;
         background: var(--white-color);
-    }
-
-    & .swiper-wrapper {
-        text-align: center;
     }
 
 `;

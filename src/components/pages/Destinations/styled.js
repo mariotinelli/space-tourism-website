@@ -23,6 +23,7 @@ export const Swiper = styled(SwiperReact)`
             top: 19.375rem;
             width: 17.8438rem;
             left: 53.125rem;
+            //left: 57.77vw;
         }
     }
        

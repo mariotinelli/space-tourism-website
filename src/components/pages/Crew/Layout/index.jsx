@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Image, ImageContainer, Name, Occupation, TitleContainer, Index, Title, Description, Container } from "./styled";
+import { Image, ImageContainer, Name, Occupation, TitleContainer, Index, Title, Description, Container, TextContainer } from "./styled";
 
 
 const CrewLayout = ({ src, occupation, name, description, maxWidth }) => (
@@ -13,9 +13,11 @@ const CrewLayout = ({ src, occupation, name, description, maxWidth }) => (
             <ImageContainer>
                 <Image src={src} />
             </ImageContainer>
-            <Occupation> {occupation} </Occupation>
-            <Name> {name} </Name>
-            <Description maxWidth={maxWidth}>{description}</Description>
+            <TextContainer>
+                <Occupation> {occupation} </Occupation>
+                <Name> {name} </Name>
+                <Description maxWidth={maxWidth}>{description}</Description>
+            </TextContainer>
         </Container>
     </>
 );

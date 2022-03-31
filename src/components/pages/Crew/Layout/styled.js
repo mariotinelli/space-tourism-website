@@ -18,6 +18,19 @@ export const Container = styled.div`
         height: 100%;
         padding-inline: 2.4375rem;
     }
+
+    @media only screen and (min-width : 1440px) {
+        padding-top: 8.5rem;
+        background: url("/public/assets/crew/background-crew-desktop.jpg") no-repeat;
+        background-size: 100vw 100vh;
+        height: 100%;
+        padding-left: 10.4063rem;
+        padding-right: 8.5625rem;
+        padding-bottom: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 `;
 
 export const TitleContainer = styled.div`
@@ -32,6 +45,12 @@ export const TitleContainer = styled.div`
         margin-bottom: 3.75rem;
         align-self: flex-start;
     }
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 4.75rem;
+        margin-bottom: 0;
+        position: absolute;
+    }
 `;
 
 export const Index = styled.p`
@@ -44,6 +63,12 @@ export const Index = styled.p`
     @media only screen and (min-width : 768px) {
         font-size: var(--font-1);
         letter-spacing: 0.2109rem;
+    }
+
+    @media only screen and (min-width : 1440px) {
+        font-size: var(--font-6);
+        line-height: 2.125rem;
+        letter-spacing: 0.2953rem;
     }
 `;
 
@@ -65,6 +90,12 @@ export const ImageContainer = styled.div`
         border-bottom: none;
         order: 1;
     }
+
+    @media only screen and (min-width : 1440px) {
+        width: auto;
+        margin: 0;
+        margin-left: 5.0938rem;
+    }
 `;
 
 export const Image = styled.img`
@@ -73,6 +104,21 @@ export const Image = styled.img`
 
     @media only screen and (min-width : 768px) {
         height: 33.25rem;
+    }
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 3.875rem;
+        height: 43.875rem;
+    }
+`;
+
+export const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 16.5rem;
+        align-items: flex-start;
     }
 `;
 
@@ -89,6 +135,13 @@ export const Occupation = styled.p`
         font-size: var(--font-7);
         margin-bottom: 0.5rem;
     }
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 0;
+        font-size: var(--font-8);
+        line-height: 2.3125rem;
+        margin-bottom: 0.9375rem;
+    }
 `;
 
 export const Name = styled(Occupation)`
@@ -101,6 +154,12 @@ export const Name = styled(Occupation)`
         font-size: var(--font-11);
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width : 1440px) {
+        font-size: var(--font-4);
+        line-height: 64px;
+        margin-bottom: 1.6875rem;
     }
 `;
 
@@ -118,6 +177,14 @@ export const Description = styled.p`
         max-width: ${props => props.maxWidth};
         line-height: 28px;
         font-size: var(--font-2);
+    }
+
+    @media only screen and (min-width : 1440px) {
+        max-width: 27.75rem;
+        line-height: 32px;
+        font-size: var(--font-12);
+        text-align: start;
+        margin-bottom: 0;
     }
 `;
 
