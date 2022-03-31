@@ -10,8 +10,14 @@ export const ExploreComponent = styled.div`
 
     @media only screen and (min-width : 768px) {
         margin-top: 4.5rem;
-        width: 410px;
-        height: 410px;
+        width: 25.625rem;
+        height: 25.625rem;
+    }
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 22.8125rem;
+        width: 27.5rem;
+        height: 27.5rem;
     }
 `;
 
@@ -38,6 +44,16 @@ export const Button = styled.button`
     @media only screen and (min-width : 768px) {
         width: 15.125rem;
         height: 15.125rem;
+
+        &:hover {
+            border: 5.25rem solid rgba(255, 255, 255, .1);
+        }
+        
+    }
+
+    @media only screen and (min-width : 1440px) {
+        width: 17.125rem;
+        height: 17.125rem;
 
         &:hover {
             border: 5.25rem solid rgba(255, 255, 255, .1);

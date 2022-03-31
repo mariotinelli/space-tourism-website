@@ -55,6 +55,20 @@ export const MenuToggle = styled.button`
 
 export const Icon = styled.img.attrs({src: menu})``;
 
+export const Line = styled.div`
+    display: none;  
+    width: 32.84%;
+    height: 0.0625rem;
+    position: absolute;
+    top: 3rem;
+    left: 11.59%;
+    z-index: 101;
+    background-color: var(--title-destinations);
+
+    @media only screen and (min-width : 1440px) {
+        display: flex;
+    }
+`;
 
 export const MenuComponent = styled.div`
     display: ${props => props.display === false ? "none" : "block"};
@@ -151,6 +165,11 @@ export const Number = styled.p`
 
     @media only screen and (min-width : 768px) {
         display: none;
+    }
+
+    @media only screen and (min-width : 1440px) {
+        display: flex;
+        margin-right: 0.6875rem;
     }
 `;
 

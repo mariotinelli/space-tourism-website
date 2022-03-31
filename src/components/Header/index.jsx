@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { HeaderComponent, Icon, Logo, MenuToggle,MenuComponent, Links, Number, Link, Close, CloseIcon } from './styled'
+import { HeaderComponent, Icon, Logo, MenuToggle,MenuComponent, Links, Number, Link, Close, CloseIcon, Line } from './styled'
 
 import {NavLink} from 'react-router-dom'
 import Home from '../pages/Home';
@@ -41,6 +41,7 @@ const Header = () => {
             <HeaderComponent>
 
                 <Logo />
+                <Line />
 
                 <MenuToggle onClick={handleClick}>
                     <Icon />
@@ -62,22 +63,6 @@ const Header = () => {
                                 {link.name} 
                             </NavLink>
                         ))}              
-                        {/*<NavLink to="/" onClick={handleClick}> 
-                            <Number>00</Number> 
-                            HOME 
-                        </NavLink>
-                        <NavLink to="/destinations/moon" onClick={handleClick}> 
-                            <Number>01</Number> 
-                            DESTINATION 
-                        </NavLink>
-                        <NavLink to="/crew" onClick={handleClick}> 
-                            <Number>02</Number> 
-                            CREW 
-                        </NavLink>
-                        <NavLink to="/technology" onClick={handleClick}> 
-                            <Number>03</Number> 
-                            TECHNOLOGY 
-                        </NavLink>*/}
                     </Links>            
                 </MenuComponent> 
                 

@@ -7,10 +7,6 @@ import {
   Route,
 } from "react-router-dom";
 import Header from "./components/Header";
-import Moon from "./components/pages/Destinations/Moon";
-import Mars from "./components/pages/Destinations/Mars";
-import Europa from "./components/pages/Destinations/Europa";
-import Titan from "./components/pages/Destinations/Titan";
 import Crew from "./components/pages/Crew";
 import Technology from "./components/pages/Technology";
 import Destinations from "./components/pages/Destinations";

@@ -13,11 +13,16 @@ export const Swiper = styled(SwiperReact)`
         justify-content: center;
         gap: 1.625rem;
         
-
         @media only screen and (min-width : 768px) {
             top: 35.8125rem;
             height: 2.125rem;
             gap: 2.1875rem;
+        }
+
+        @media only screen and (min-width : 1440px) {
+            top: 19.375rem;
+            width: 17.8438rem;
+            left: 53.125rem;
         }
     }
        

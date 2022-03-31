@@ -21,4 +21,10 @@ export const HomeComponent = styled.div`
         background: url("/public/assets/home/background-home-desktop.jpg") no-repeat;
         background-size: 100vw 100%;
     }
+
+    @media only screen and (min-width : 1440px) {
+        display: flex;
+        height: 100%;
+
+    }
 `;

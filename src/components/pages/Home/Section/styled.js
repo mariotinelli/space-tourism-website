@@ -14,6 +14,13 @@ export const SectionComponent = styled.section`
         margin-top: 11.125rem;
         gap: 1.5rem;
     }
+
+    @media only screen and (min-width : 1440px) {
+        margin-top: 21.6875rem;
+        margin-left: 10.3125rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 `;
 
 export const Title = styled.p`
@@ -29,6 +36,11 @@ export const Title = styled.p`
         font-size: var(--font-1);
         letter-spacing: 0.2109rem;
     }
+
+    @media only screen and (min-width : 1440px) {
+        font-size: var(--font-6);
+        letter-spacing: 0.2953rem;
+    }
 `;
 
 export const Name = styled.p`
@@ -42,6 +54,9 @@ export const Name = styled.p`
         font-size: var(--font-10);
         line-height: 9.375rem;
     }    
+    @media only screen and (min-width : 768px) {
+        line-height: 172px;
+    }    
 `;
 
 export const Text = styled.p`
@@ -54,5 +69,11 @@ export const Text = styled.p`
     @media only screen and (min-width : 768px) {
         max-width: 27.75rem;
         font-size: var(--font-2);
+    }
+
+    @media only screen and (min-width : 1440px) {
+        text-align: start;
+        line-height: 2rem;
+        font-size: var(--font-12);
     }
 `;
