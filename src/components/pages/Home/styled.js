@@ -15,4 +15,10 @@ export const HomeComponent = styled.div`
         padding-top: 1.5rem;
         padding-left: 1.5rem;
     }
+
+    @media only screen and (min-width : 1025px) {
+        padding-top: 2.5rem; 
+        background: url("/public/assets/home/background-home-desktop.jpg") no-repeat;
+        background-size: 100vw 100%;
+    }
 `;

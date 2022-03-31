@@ -16,6 +16,13 @@ export const HeaderComponent = styled.header`
     @media only screen and (min-width : 768px) {
         padding-left: 2.4375rem; 
     }
+
+    @media only screen and (min-width : 1025px) {
+        padding: 0;
+        margin-top: 2.5rem;
+        height: 6rem;
+        box-sizing: content-box;
+    }
 `;
 
 export const Logo = styled.img.attrs({src: logo})`
@@ -27,6 +34,10 @@ export const Logo = styled.img.attrs({src: logo})`
     @media only screen and (min-width : 768px) {
         width: 3rem;
         height: 3rem;
+    }
+
+    @media only screen and (min-width : 1025px) {
+        margin-left: 3.4375rem;
     }
 
 `;
@@ -60,8 +71,13 @@ export const MenuComponent = styled.div`
         width: 28.125rem;
         height: 6rem;
         display: flex;
-        backdrop-filter: none;
-        background-color: var(--background-menu);
+        backdrop-filter: blur(1.5rem);
+    }
+
+    @media only screen and (min-width : 1025px) {
+        width: 51.875rem;
+        display: flex;
+        backdrop-filter: blur(1.5rem);
     }
 `;
 
@@ -114,8 +130,17 @@ export const Links = styled.div`
         }
 
         & .navlink.active {
-            padding-bottom: "2.25rem";
             border-bottom: 3px solid var(--white-color);
+        }
+    }
+
+    @media only screen and (min-width : 1025px) {
+        gap: 3rem;        
+
+        & .navlink {
+            font-size: var(--font-2);
+            letter-spacing: 0.1688rem;
+            padding-bottom: 2.375rem;
         }
     }
 `;
