@@ -12,7 +12,17 @@ export const Swiper = styled(SwiperReact)`
 
         @media only screen and (min-width : 768px) {
             top: 36.625rem;
-            height: 3.75rem;
+            height: 60px;
+        }
+
+        @media only screen and (min-width : 1440px) {
+           display: flex;
+           flex-direction: column;
+           top: 23.9375rem;
+           left: 10.3125rem;
+           height: auto;
+           width: auto;
+           gap: 2rem;
         }
     }
         
@@ -34,6 +44,15 @@ export const Swiper = styled(SwiperReact)`
             font-size: var(--font-7);
             padding-top: 1rem;
         }
+
+        @media only screen and (min-width : 1440px) {
+            height: 5rem;
+            width: 5rem;
+            font-size: var(--font-8);
+            margin: 0;
+            padding-top: 1.375rem;
+        }
+
     }
 
     & .swiper-pagination-bullet-active {
@@ -43,10 +62,6 @@ export const Swiper = styled(SwiperReact)`
 
     & .swiper-pagination-bullet:hover {
         border: 1px solid var(--white-color);
-    }
-
-    & .swiper-wrapper {
-        text-align: center;
     }
 
 `;

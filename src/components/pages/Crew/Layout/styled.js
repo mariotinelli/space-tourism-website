@@ -23,7 +23,7 @@ export const Container = styled.div`
         padding-top: 8.5rem;
         background: url("/public/assets/crew/background-crew-desktop.jpg") no-repeat;
         background-size: 100vw 100vh;
-        height: 100%;
+        height: 100vh;
         padding-left: 10.4063rem;
         padding-right: 8.5625rem;
         padding-bottom: auto;

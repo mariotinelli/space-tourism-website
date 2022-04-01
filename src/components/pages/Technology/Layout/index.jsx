@@ -1,23 +1,29 @@
 import React from "react";
 
-import { Image, Name, DefaultText, Container, Index, Title, TitleContainer, Description} from "./styled";
+import { Image, Name, DefaultText, Container, Index, Title, TitleContainer, Description, TextContainer} from "./styled";
 
 
-const TechnologyLayout = ({ src, name, description }) => (
+const TechnologyLayout = ({ name, description, imageMobile, imageDesktop }) => (
     <>
         <Container>
+            
             <TitleContainer>
                 <Index>03</Index>
                 <Title>SPACE LAUNCH 101</Title>
             </TitleContainer>
 
-            <Image src={src} />
+            <Image imageMobile={imageMobile} imageDesktop={imageDesktop} />
 
-            <DefaultText> THE TERMINOLOGY </DefaultText>
-            <Name> {name} </Name>
-            <Description paddingInline="1.5rem" marginBottom="3.5rem">
-                {description}
-            </Description>
+            <TextContainer>
+
+                <DefaultText> THE TERMINOLOGY </DefaultText>
+                <Name> {name} </Name>
+                <Description >
+                    {description}
+                </Description>
+
+            </TextContainer>
+
         </Container>
     </>
 );

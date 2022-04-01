@@ -24,7 +24,6 @@ export const HomeComponent = styled.div`
 
     @media only screen and (min-width : 1440px) {
         display: flex;
-        height: 100%;
-
+        height: 100vh;
     }
 `;
